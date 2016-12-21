@@ -1,0 +1,38 @@
+div {
+	background-color: white;
+}
+table {
+	font-size: 1.1em;
+	border-spacing: 50px 0;
+	background-color: white;
+
+	td, th {
+		padding: 0.1em;
+	}
+	tr:nth-of-type(even) {
+		background-color: #E3F2FD;
+	}
+	tr:nth-of-type(odd) {
+		background-color: #BBDEFB;
+	}
+	thead tr:nth-of-type(odd) {
+		color: white;
+		background-color: #003461;
+	}
+}
+
+caption, span {
+		font: bold 2em/1.6 'Raleway', sans-serif;
+		color: white;
+		background-color: #003461;
+		text-align: center;
+		width: 100%;
+}
+caption {
+	margin-bottom: 0.5em;
+}
+span {
+	margin: 1em;
+	padding: 0.2em;
+	width: auto;
+}

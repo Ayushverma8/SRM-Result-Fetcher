@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Fixed table header</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+
+  
+</head>
+
+
+<body>
+  <section>
+  	<table>
+			<!-- <caption>Student Details</caption> -->
+			<tbody>
+				{{#each details}}
+					<tr>
+					<td>{{@key}}</td>
+					<td>{{this}}</td>
+					</tr>
+				{{/each}}
+			</tbody>
+		</table>
+  <!--for demo wrap-->
+  <!-- <h1>GPA Calculator</h1> -->
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Semester</th>
+          <th>Code</th>
+          <th>Course name</th>
+          <th>Credit</th>
+          <th>Grade</th>
+          <th>Result</th>
+        <tr>
+      </thead>
+    </table>
+  </div>
+  <!-- <span>GPA: {{GPA}}</span> -->
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      
+      <!-- <caption>Subject Details</caption> -->
+      <colgroup>
+        <col class="s-no">
+        <col class="sem">
+        <col class="code">
+        <col class="name">
+        <col class="credit">
+        <col class="grade">
+        <col class="result">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Semester</th>
+          <th>Code</th>
+          <th>Course name</th>
+          <th>Credit</th>
+          <th>Grade</th>
+          <th>Result</th>
+        <tr>
+      </thead>
+      <tbody>
+        {{#each subjects}}
+          <tr>
+            <td>{{'S.No.'}}</td>
+            <td>{{SEMESTER}}</td>
+            <td>{{CODE}}</td>
+            <td>{{'COURSE DESCRIPTION'}}</td>
+            <td>{{CREDIT}}</td>
+            <td>{{GRADE}}</td>
+            <td>{{RESULT}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+  <!-- <h2>GPA: {{GPA}}</h2> -->
+  <script type="text/javascript">
+  notie.alert(style, 'message', 4);
+
+notie.confirm('Title text', 'Yes button text', 'No/cancel button text', function(){
+    // User choose Yes.
+});
+
+  // notie.alert(2, 'Warning<br><b>with</b><br><i>GPA: {{GPA}} </i><br><u>included.</u>', 2) // Hides after 2 seconds
+  </script>
+  <div style ="text-align:center;">
+  	<br>
+  	<br>
+  	<p style="color:white;">GPA: {{GPA}} </p>
+
+   <br />
+    <!-- GPA: {{GPA}}  -->
+</div>
+</section>
+
+
+
+<!-- follow me template -->
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+<script src="https://unpkg.com/notie"></script>
+</body>
+</html>
