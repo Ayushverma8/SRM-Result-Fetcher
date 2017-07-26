@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Result</title>
+	<link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+	<div>
+		<table>
+			<caption>Student Details</caption>
+			<tbody>
+				{{#each details}}
+					<tr>
+					<td>{{@key}}</td>
+					<td>{{this}}</td>
+					</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+	<span>GPA: {{GPA}}</span>
+	<div>
+		<table>
+			<caption>Subject Details</caption>
+			<colgroup>
+				<col class="s-no">
+				<col class="sem">
+				<col class="code">
+				<col class="name">
+				<col class="credit">
+				<col class="grade">
+				<col class="result">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Semester</th>
+					<th>Code</th>
+					<th>Course name</th>
+					<th>Credit</th>
+					<th>Grade</th>
+					<th>Result</th>
+				<tr>
+			</thead>
+			<tbody>
+				{{#each subjects}}
+					<tr>
+						<td>{{'S.No.'}}</td>
+						<td>{{SEMESTER}}</td>
+						<td>{{CODE}}</td>
+						<td>{{'COURSE DESCRIPTION'}}</td>
+						<td>{{CREDIT}}</td>
+						<td>{{GRADE}}</td>
+						<td>{{RESULT}}</td>
+					</tr>
+				{{/each}}
+			</tbody>
+		</table>
+		</div>
+</body>
+</html>

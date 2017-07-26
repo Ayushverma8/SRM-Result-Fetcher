@@ -1,0 +1,13 @@
+html {
+	height: 100%;
+}
+body {
+	align-items: center;
+	background-color: #00aeff;
+	background-image: url(../img/linen.png);
+	display: flex;
+	height: 100%;
+	flex-flow: column nowrap;
+	justify-content: center;
+	width: 100%;
+}

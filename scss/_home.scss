@@ -1,0 +1,67 @@
+form {
+	align-items: center;
+	background-color: rgb(255,255,255);
+	display: flex;
+	flex-flow: column nowrap;
+  justify-content: center;
+	width: 30%;
+
+	& > label:nth-of-type(1) {
+		font: bold 2em/2.5 'Raleway', sans-serif;
+		color: white;
+		background-color: #003461;
+		text-align: center;
+		width: 100%;
+	}
+	
+	& > input, & > div {
+		font: normal 1.2em/1.5 'Raleway', sans-serif;
+		margin: 1em;
+		margin-bottom: 0;
+		width: 90%;
+	}
+	
+	img {
+		margin: 1em;
+		margin-bottom: 0;
+	}
+
+	div {
+		align-items: center;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		
+		label {
+			font: normal 1.2em/1.5 'Raleway', sans-serif;
+			color: #003461;
+			border-radius: 0.5em;
+			padding: 0.2em;
+			text-align: center;
+		}
+		input {
+			font: normal 1.2em/1.5 'Raleway', sans-serif;
+			height: 100%;
+		}
+	}
+	
+	input {
+		background-color: hsl(208,100%,96%);
+		border: none;
+		border-radius: .5em;
+    &:focus {
+      border: none;
+      outline: none;
+    }
+		&[type="submit"] {
+			background-color: #003461;
+			color: rgb(255,255,255);
+			border-radius: 2em;
+			margin-bottom: .5em;
+			transition: all 1000ms;
+			&:hover {
+				background-color: hsl(208,100%,45%);
+			}
+		}
+	}
+}

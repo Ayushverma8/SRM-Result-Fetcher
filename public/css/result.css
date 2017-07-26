@@ -1,0 +1,85 @@
+/* reset browser styles */
+* {
+  box-sizing: border-box; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.2; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ol {
+  padding-left: 1.4em;
+  list-style: decimal; }
+
+ul {
+  padding-left: 1.4em;
+  list-style: square; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* end reset browser styles */
+html {
+  height: 100%; }
+
+body {
+  align-items: center;
+  background-color: #00aeff;
+  background-image: url(../img/linen.png);
+  display: flex;
+  height: 100%;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 100%; }
+
+div {
+  background-color: white; }
+
+table {
+  font-size: 1.1em;
+  border-spacing: 50px 0;
+  background-color: white; }
+  table td, table th {
+    padding: 0.1em; }
+  table tr:nth-of-type(even) {
+    background-color: #E3F2FD; }
+  table tr:nth-of-type(odd) {
+    background-color: #BBDEFB; }
+  table thead tr:nth-of-type(odd) {
+    color: white;
+    background-color: #003461; }
+
+caption, span {
+  font: bold 2em/1.6 'Raleway', sans-serif;
+  color: white;
+  background-color: #003461;
+  text-align: center;
+  width: 100%; }
+
+caption {
+  margin-bottom: 0.5em; }
+
+span {
+  margin: 1em;
+  padding: 0.2em;
+  width: auto; }
